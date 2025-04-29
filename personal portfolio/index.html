@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your Name - Web Developer Portfolio">
+  <meta name="keywords" content="web developer, portfolio, HTML, CSS, JavaScript">
+  <meta name="author" content="Your Name">
+  <title>Lokeshwaran - Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="main.js" as="script">
+</head>
+<body>
+  
+  <!-- Skip Navigation Link -->
+  <a href="#main" class="skip-link">Skip to Main Content</a>
+
+  <!-- Header -->
+  <header role="banner">
+    <div class="container">
+      <h1>LOKESHWARAN A</h1>
+      <p class="pas active">UI Enthusiast | Creative Thinker</p>
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- <button id="theme-toggle">Dark Mode</button> -->
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" role="main">
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About Me</h2>
+        <div class="about-content">
+          <img src="assets/images/profile.jpg" alt="Profile  Picture" class="profile-img">
+          <p>
+            A passionate Computer Applications graduate with a deep interest in technology and innovation. 
+            Known for curiosity, creativity, and a strong commitment to continuous learning. Thrives in collaborative environments and enjoys approaching challenges with a problem-solving mindset to deliver meaningful solutions. Dedicated to contributing to projects that create a positive impact. Maintains a genuine, growth-oriented attitude, values meaningful connections, and brings a thoughtful, enthusiastic presence to every opportunity. 
+            Outside of the professional space, finds energy and focus through a love for cricket.
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Button -->
+    <div class="resume-button">
+      <a href="assets/pdf/Lokeshwaran-Resume.pdf" download="Lokeshwaran_resume.pdf" class="btn">Download CV</a>
+  </div>
+
+    <!-- Projects Section -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="filter-buttons">
+          <button data-filter="all" class="active">All</button>
+          <!-- <button data-filter="web">Web</button>
+          <button data-filter="design">Design</button> -->
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-category="web">
+            <img src="assets/images/project1.jpg" alt="Project 1 Screenshot">
+            <h3>Expense Tracker</h3>
+            <p>An Expense Tracker is a simple web app that allows users to record, categorize, and manage their expenses efficiently. 
+              It offers a user-friendly interface for adding, editing, and deleting transactions, helping users track their spending with ease. 
+              The app ensures data persistence, so users can access their transaction history anytime.With its clean design and intuitive features, 
+              it makes personal finance management more organized and accessible.💰📊</p>
+            <a href="https://exp2ensetracker.netlify.app/" class="btn">View Project</a>
+          </article>
+          <article class="project-card" data-category="design">
+            <img src="assets/images/project2.jpg" alt="Project 2 Screenshot">
+            <h3>QR-Code Generator</h3>
+            <p>A QR Code Generator is a web app that allows users to generate QR codes for URLs, text, or other data. 
+              It features a user-friendly interface for input and provides instant QR code generation. 
+              The app uses a QR Code API (or a JavaScript library) to dynamically create the QR codes, offering a seamless experience for users to easily generate and download them.📝</p>
+            <a href="https://qr3codegenerator.netlify.app/" class="btn">View Project</a>
+          </article>
+          <article class="project-card" data-category="design">
+             <img src="assets/images/project3.jpg" alt="Project 3 Screenshot">
+            <h3>Connect Four Game</h3>
+            <p>Connect Four  🎮 is a two-player strategy game where the objective is to connect four of one's own discs in a row, either horizontally, vertically, or diagonally, before the opponent does. 
+              The game features a simple yet visually appealing design,🟡🔴  with real-time updates as players take turns, 
+              making the gameplay both engaging and challenging.🏆</p>
+            <a href="https://connect6game.netlify.app/" class="btn">View Project</a>
+          </article>
+          <article class="project-card" data-category="design">
+            <img src="assets/images/project4.jpg" alt="Project 4 Screenshot">
+           <h3>News Website</h3>
+           <p>Global Hub News is designed to keep you updated with what’s happening around the world in a fast, clear, and organized way. 
+            📰 The website collects and displays the latest news stories from trusted sources, making it easy for readers to explore different topics such as current events, politics, science, technology, and more. 📖 </p>
+           <a href="https://newsgwebsite.netlify.app/" class="btn">View Project</a>
+         </article> 
+         <article class="project-card" data-category="design">
+          <img src="assets/images/project5.png"alt="Project 5 Screenshot">
+         <h3>Quiz Master</h3>
+         <p>Quiz Master is a 🧠 fun and engaging quiz web application that allows users to test their knowledge across various topics. It features a clean interface, smooth transitions, and real-time feedback to keep users entertained and informed. 
+          The app provides a score summary at the end and allows users to retake the quiz whenever they like. 📚</p>
+         <a href="https://quizwbsite.netlify.app/" class="btn">View Project</a>
+       </article> 
+       <article class="project-card" data-category="design">
+        <img src="assets/images/project6.jpg"alt="Project 6 Screenshot">
+       <h3>ToDo Wave</h3>
+       <p>📝 Todo Wave - A sleek todo list app with animated wavy background. Features add/edit/delete tasks, 🏷️ filtering, and 💾 local storage. Includes 🏠 landing page with ✨ smooth transitions & custom scrollbar. 
+        Built with ⚡HTML, CSS & JavaScript.</p>
+       <a href="https://todo7list.netlify.app/" class="btn">View Project</a>
+     </article> 
+          <!-- Add more project cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+     
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading">Skills</h2>
+        <ul class="skills-list">
+          <li><img src="assets/images/html5-logo.png" alt="HTML5 Logo" class="skill-logo"></li>
+          <li><img src="assets/images/css3-logo.png" alt="CSS3 Logo" class="skill-logo"></li>
+          <li><img src="assets/images/bootstrap-logo.png" alt="Bootstrap Logo" class="skill-logo"></li>
+          <li><img src="assets/images/javascript-logo.png" alt="JavaScript Logo" class="skill-logo"></li>
+          <li><img src="assets/images/react-logo.png" alt="React.js Logo" class="skill-logo"></li>
+          <li><img src="assets/images/java-logo.png" alt="Java Logo" class="skill-logo"></li>
+          <li><img src="assets/images/sql-logo.png" alt="SQL Logo" class="skill-logo"></li>
+          <li><img src="assets/images/git-logo.png" alt="Git Logo" class="skill-logo"></li>
+        </ul>
+      </div>
+    </section>
+    
+
+    <!-- Certifications Section -->
+    <section id="certifications" aria-labelledby="certifications-heading">
+      <div class="container">
+        <h2 id="certifications-heading">Certifications & Internships</h2>
+        <div class="certifications-grid">
+          <div class="certification-card">
+            <h3>Web Development Internship</h3>
+            <p>Company: InternPe</p>
+            <p>Duration: 1 month (September 2024)</p>
+            <a href="assets/images/intern.jpg" class="btn">View Certificate</a>
+          </div>
+          <div class="certification-card">
+            <h3>Software Testing</h3>
+            <p>Issued by: NPTEL </p>
+            <p>Duration: 2 months (Jan - Feb 2023)</p>
+            <a href="assets/images/nptel.jpg" class="btn">View Certificate</a>
+          </div>
+          <div class="certification-card">
+            <h3>Darkweb in Cybercrime</h3>
+            <p>Issued by: Internatinal conference crime against women and children </p>
+            <p>Duration: 2 Days March 2024</p>
+            <a href="assets/images/conference.jpg" class="btn">View Certificate</a>
+          </div>
+          <div class="certification-card">
+            <h3>Build your own chatbot</h3>
+            <p>Issued by: IBM Cognitive class </p>
+            <p>Duration: 1 Month February 2025</p>
+            <a href="assets/images/ibm.jpg" class="btn">View Certificate</a>
+          </div>
+          <div class="certification-card">
+            <h3>JavaScript</h3>
+            <p>Issued by: GUVI </p>
+            <p>Duration: 3 Months (July - September 2024)</p>
+            <a href="assets/images/Guvi.jpg" class="btn">View Certificate</a>
+          </div>
+          <div class="certification-card">
+            <h3>HTML & CSS</h3>
+            <p>Issued by: Great Learning</p>
+            <p>Duration: 3 Months (Jan - Mar 2024)</p>
+            <a href="assets/images/Greatlearn.jpg" class="btn">View Certificate</a>
+          </div>
+          <div class="certification-card">
+            <h3>Getting Started With Artifical Intelligence</h3>
+            <p>Issued by: IBM Skills Build</p>
+            <p>Duration: 2 Months (Jan - Feb 2025)</p>
+            <a href="assets/images/IBMskills.jpg" class="btn">View Certificate</a>
+          </div>
+          <div class="certification-card">
+            <h3>PHp and MySQL Trainee</h3>
+            <p>Issued by: Spoken Tutorial IIT Bombay </p>
+            <p>Duration: 2 Months (Aug - Sept 2024)</p>
+            <a href="assets/images/IIT bombay project.jpg" class="btn">View Certificate</a>
+          </div>
+          <div class="certification-card">
+            <h3>RDBMS PostgreSQL</h3>
+            <p>Issued by: Spoken Tutorial IIT Bombay</p>
+            <p>Duration: 2 Months (Aug - Sept 2023)</p>
+            <a href="assets/images/Bombay ST.jpg" class="btn">View Certificate</a>
+          </div>
+          <div class="certification-card">
+            <h3>Machine Learning </h3>
+            <p>Issued by: Elon's AI</p>
+            <p>Duration: 1 Months Jan 2024</p>
+            <a href="assets/images/Machine learning.jpg" class="btn">View Certificate</a>
+          </div>
+           <!-- Add more certification/internship cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io/f/mqaeykad" method="post">
+          
+          <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder=" ">
+            <label for="name">Name</label>
+          </div>
+          
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder=" ">
+            <label for="email">Email</label>
+          </div>
+          
+          <div class="form-group">
+            <textarea id="message" name="message" required placeholder=" "></textarea>
+            <label for="message">Message</label>
+          </div>
+    
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+    
+        <div aria-live="polite" id="form-message"></div>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Lokeshwaran. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/Loke-1402/Projects" target="_blank" aria-label="GitHub">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/lokeshwaran-a-011b98288" target="_blank" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/.loke..1402._?utm_source=qr&igsh=MWc1ZHZyeHVxN2luZw==" target="_blank" aria-label="Instagram">instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
