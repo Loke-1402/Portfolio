@@ -1,264 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lokeshwaran - Web Developer Portfolio">
-  <meta name="keywords" content="web developer, portfolio, HTML, CSS, JavaScript">
-  <meta name="author" content="Lokeshwaran">
-  <title>Lokeshwaran - Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preload" href="style.css" as="style">
-  <link rel="preload" href="main.js" as="script">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="main.js" as="script">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
 </head>
 <body>
-  
-  <!-- Skip Navigation Link -->
-  <a href="#main" class="skip-link">Skip to Main Content</a>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">SD Pro</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-  <!-- Header -->
-  <header role="banner">
-    <div class="container">
-      <h1>LOKESHWARAN A</h1>
-      <p class="pas active">UI Enthusiast | Creative Thinker</p>
-      <nav role="navigation" aria-label="Main Navigation">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- <button id="theme-toggle">Dark Mode</button> -->
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main id="main" role="main">
-    <!-- About Section -->
-    <section id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <h2 id="about-heading">About Me</h2>
-        <div class="about-content">
-          <img src="assets/images/profile.jpg" alt="Profile  Picture" class="profile-img">
-          <p>
-            I am a passionate and driven Computer Applications graduate with a deep-rooted interest in technology, innovation, and creative problem-solving. 
-            Throughout my academic and personal journey, I have consistently demonstrated a thirst for knowledge, a curiosity to explore how things work, and a commitment to staying ahead in a rapidly evolving digital world. 
-            With a strong foundation in web development, programming, and software design, I approach each project with a balance of creativity and logic. 
-            I thrive in collaborative environments where ideas flow freely and teamwork drives results. Whether it’s building responsive web applications, experimenting with new technologies, or contributing to innovative solutions, I bring an enthusiastic and thoughtful mindset to the table. 
-            My core values include continuous learning, meaningful connection, and making a positive impact through technology. I believe that every challenge is an opportunity to grow, and I welcome feedback as a tool for improvement. I value authenticity and integrity in both professional and personal interactions. 
-            Beyond the screen, I recharge and stay focused through my love for cricket—a game that teaches strategy, discipline, and team spirit, all of which I carry into my work as well. Whether coding or competing, I bring the same level of energy, discipline, and passion. As I step forward into the professional world, 
-            I aim to contribute to impactful projects that not only solve real-world problems but also help me evolve as a tech professional and a human being.
-            I’m excited about the journey ahead and the opportunities to collaborate, innovate, and grow with like-minded individuals and organizations..</p>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1>Hi, I'm Lokeshwaran</h1>
+                    <h2>Java Fullstack developer</h2>
+                    <p>💻 Turning ideas into code, and code into impactful digital experiences.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                        <a href="#projects" class="btn btn-secondary">View Work</a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Software Tester">
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
     </section>
 
-    <!-- Resume Button -->
-    <div class="resume-button">
-      <a href="assets/pdf/Lokeshwaran-Resume.pdf" download="Lokeshwaran_resume.pdf" class="btn">Download CV</a>
-  </div>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who Am I?</h3>
+                    <p>I’m a passionate Software Developer with a drive to build scalable, user-focused digital solutions. My journey in technology began with a curiosity to understand how things work, which soon grew into a passion for developing and testing impactful applications that solve real-world problems.</p>
+                    <p>With hands-on experience in web development, databases, backend technologies, and software testing, I enjoy designing, building, and validating applications that are both functional and efficient. I thrive on bridging the gap between creativity and technology, ensuring that every project delivers innovation, performance, quality, and value.</p>
+                    <p>When I’m not coding, I spend time exploring emerging technologies, practicing testing methodologies, contributing to personal projects, and continuously sharpening my skills to stay ahead in the fast-paced tech world.</p>
+                </div>
+                    
+                    <div class="about-photo">
+                <img src="assets/images/Profile.png" alt="Profile Photo">
+                </div>
+                </div>
+                <div class="download-cv">
+                    <a href="assets/pdf/Lokeshwaran_Fullstack_Resume.pdf" class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" aria-labelledby="projects-heading">
-      <div class="container">
-        <h2 id="projects-heading">Projects</h2>
-        <div class="filter-buttons">
-          <button data-filter="all" class="active">All</button>
-          <!-- <button data-filter="web">Web</button>
-          <button data-filter="design">Design</button> -->
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Manual Tester</h3>
+                        <h4>Upwork</h4>
+                        <p>Remote, India</p>
+                        <span class="timeline-date">Sept 2023 - Feb 2024</span>
+                        <p>Lead a team of testers in developing comprehensive test strategies for enterprise applications. Implemented automated testing frameworks that reduced regression testing time by 75%. Collaborate with cross-functional teams to ensure quality throughout the SDLC.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Web Developer Intern</h3>
+                        <h4>Internpe</h4>
+                        <p>Remote, India</p>
+                        <span class="timeline-date">Sept 2024 - Oct 2024</span>
+                        <p>Completed a remote Web Development internship, working on task-based projects with strict deadlines — developing responsive, user-friendly websites using HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <!-- <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>QA Analyst</h3>
+                        <h4>Digital Innovations</h4>
+                        <span class="timeline-date">2016 - 2018</span>
+                        <p>Performed manual testing for e-commerce platforms. Created detailed bug reports and worked closely with developers to resolve issues. Participated in requirement analysis and test planning sessions.</p>
+                    </div>
+                </div> -->
+                <!-- <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>QA Intern</h3>
+                        <h4>StartUp Labs</h4>
+                        <span class="timeline-date">2015 - 2016</span>
+                        <p>Assisted in testing web applications. Learned fundamentals of software testing methodologies. Gained hands-on experience with bug tracking systems and test documentation.</p>
+                    </div>
+                </div> -->
+            </div>
         </div>
-        <div class="project-grid">
-          <article class="project-card" data-category="web">
-            <img src="assets/images/project1.jpg" alt="Project 1 Screenshot">
-            <h3>Expense Tracker</h3>
-            <p>An Expense Tracker is a simple web app that allows users to record, categorize, and manage their expenses efficiently. 
-              It offers a user-friendly interface for adding, editing, and deleting transactions, helping users track their spending with ease. 
-              The app ensures data persistence, so users can access their transaction history anytime.With its clean design and intuitive features, 
-              it makes personal finance management more organized and accessible.💰📊</p>
-            <a href="https://exp2ensetracker.netlify.app/" class="btn">View Project</a>
-          </article>
-          <article class="project-card" data-category="design">
-            <img src="assets/images/project2.jpg" alt="Project 2 Screenshot">
-            <h3>QR-Code Generator</h3>
-            <p>A QR Code Generator is a web app that allows users to generate QR codes for URLs, text, or other data. 
-              It features a user-friendly interface for input and provides instant QR code generation. 
-              The app uses a QR Code API (or a JavaScript library) to dynamically create the QR codes, offering a seamless experience for users to easily generate and download them.📝</p>
-            <a href="https://qr3codegenerator.netlify.app/" class="btn">View Project</a>
-          </article>
-          <article class="project-card" data-category="design">
-             <img src="assets/images/project3.jpg" alt="Project 3 Screenshot">
-            <h3>Connect Four Game</h3>
-            <p>Connect Four  🎮 is a two-player strategy game where the objective is to connect four of one's own discs in a row, either horizontally, vertically, or diagonally, before the opponent does. 
-              The game features a simple yet visually appealing design,🟡🔴  with real-time updates as players take turns, 
-              making the gameplay both engaging and challenging.🏆</p>
-            <a href="https://connect6game.netlify.app/" class="btn">View Project</a>
-          </article>
-          <article class="project-card" data-category="design">
-            <img src="assets/images/project4.jpg" alt="Project 4 Screenshot">
-           <h3>News Website</h3>
-           <p>Global Hub News is designed to keep you updated with what’s happening around the world in a fast, clear, and organized way. 
-            📰 The website collects and displays the latest news stories from trusted sources, making it easy for readers to explore different topics such as current events, politics, science, technology, and more. 📖 </p>
-           <a href="https://newsgwebsite.netlify.app/" class="btn">View Project</a>
-         </article> 
-         <article class="project-card" data-category="design">
-          <img src="assets/images/project5.png"alt="Project 5 Screenshot">
-         <h3>Quiz Master</h3>
-         <p>Quiz Master is a 🧠 fun and engaging quiz web application that allows users to test their knowledge across various topics. It features a clean interface, smooth transitions, and real-time feedback to keep users entertained and informed. 
-          The app provides a score summary at the end and allows users to retake the quiz whenever they like. 📚</p>
-         <a href="https://quizwbsite.netlify.app/" class="btn">View Project</a>
-       </article> 
-       <article class="project-card" data-category="design">
-        <img src="assets/images/project6.jpg"alt="Project 6 Screenshot">
-       <h3>ToDo Wave</h3>
-       <p>📝 Todo Wave - A sleek todo list app with animated wavy background. Features add/edit/delete tasks, 🏷️ filtering, and 💾 local storage. Includes 🏠 landing page with ✨ smooth transitions & custom scrollbar. 
-        Built with ⚡HTML, CSS & JavaScript.</p>
-       <a href="https://todo7list.netlify.app/" class="btn">View Project</a>
-     </article> 
-          <!-- Add more project cards -->
-        </div>
-      </div>
     </section>
 
     <!-- Skills Section -->
-     
-    <section id="skills" aria-labelledby="skills-heading">
-      <div class="container">
-        <h2 id="skills-heading">Skills</h2>
-        <ul class="skills-list">
-          <li><img src="assets/images/html5-logo.png" alt="HTML5 Logo" class="skill-logo"></li>
-          <li><img src="assets/images/css3-logo.png" alt="CSS3 Logo" class="skill-logo"></li>
-          <li><img src="assets/images/bootstrap-logo.png" alt="Bootstrap Logo" class="skill-logo"></li>
-          <li><img src="assets/images/javascript-logo.png" alt="JavaScript Logo" class="skill-logo"></li>
-          <li><img src="assets/images/react-logo.png" alt="React.js Logo" class="skill-logo"></li>
-          <li><img src="assets/images/java-logo.png" alt="Java Logo" class="skill-logo"></li>
-          <li><img src="assets/images/sql-logo.png" alt="SQL Logo" class="skill-logo"></li>
-          <li><img src="assets/images/git-logo.png" alt="Git Logo" class="skill-logo"></li>
-        </ul>
-      </div>
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend Technologies</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+                        <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                        <div class="skill-item"><i class="fab fa-js"></i> JavaScript (ES6+)</div>
+                        <div class="skill-item"><i class="fab fa-react"></i> Bootstrap</div>
+                        <div class="skill-item"><i class="fas fa-link"></i> RESTful API</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend Technologies</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                        <div class="skill-item"><i class="fas fa-seedling"></i> Spring</div>
+                        <div class="skill-item"><i class="fas fa-code"></i> Hibernate / JPA</div>
+                        <div class="skill-item"><i class="fas fa-project-diagram"></i> Microservices</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+                        <div class="skill-item"><i class="fab fa-react"></i> React.js</div>
+                        <div class="skill-item"><i class="fab fa-node-js"></i> Node.js</div>
+                        <div class="skill-item"><i class="fas fa-server"></i> Express.js</div>
+                        <div class="skill-item"><i class="fas fa-code"></i> jQuery</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fas fa-microchip"></i> MySQL</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                        <div class="skill-item"><i class="fas fa-server"></i> XAMPP</div>
+                        <div class="skill-item"><i class="fab fa-rendact"></i> Oracle </div>
+                        <div class="skill-item"><i class="fab fa-dashcube"></i> Microsoft SQL Server</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Development Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fab fa-github"></i> Git & GitHub</div>
+                        <div class="skill-item"><i class="fas fa-code"></i> VS Code</div>
+                        <!-- <div class="skill-item"><i class="fas fa-lightbulb"></i> IntelliJ IDEA</div> -->
+                        <div class="skill-item"><i class="fab fa-figma"></i> Figma</div>
+                        <div class="skill-item"><i class="fas fa-users"></i> Scrum</div>
+                        <div class="skill-item"><i class="fab fa-google"></i> Firebase</div>
+                        <div class="skill-item"><i class="fas fa-cloud-upload-alt"></i> Netlify</div>
+                        <div class="skill-item"><i class="fab fa-docker"></i> Docker</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Testing Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fas fa-check-circle"></i> Selenium</div>
+                        <div class="skill-item"><i class="fas fa-bug"></i> Jira</div>
+                        <div class="skill-item"><i class="fas fa-network-wired"></i> Postman</div>
+                        <div class="skill-item"><i class="fas fa-robot"></i> Mockita</div>
+                        <div class="skill-item"><i class="fas fa-robot"></i> Automation Scripts</div>
+                        <div class="skill-item"><i class="fas fa-vials"></i> TestNG</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Other Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fas fa-mobile-alt"></i> Responsive Web Design</div>
+                        <div class="skill-item"><i class="fas fa-brain"></i> LLMs</div>
+                        <div class="skill-item"><i class="fas fa-network-wired"></i> Networking</div>
+                        <div class="skill-item"><i class="fas fa-project-diagram"></i> Agile Methodologies</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Currently Learning</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fas fa-cloud-download"></i> AWS</div>
+                        <div class="skill-item"><i class="fas fa-brain"></i> AI Integration</div>
+                        <div class="skill-item"><i class="fas fa-shield-alt"></i> Cybersecurity Basics</div>
+                        <div class="skill-item"><i class="fas fa-cloud"></i> Cloud Deployment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="E-commerce Test Automation">
+                    </div>
+                    <div class="project-info">
+                        <h3>News Portal</h3>
+                        <p>A dynamic news platform delivering the latest headlines and category-based articles with an intuitive, user-friendly interface.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React.js</span>
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">News API</span>
+                            <span class="project-tag">AI Model</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Loke-1402/Interactive-News"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://newsgwebsite.netlify.app/"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/jpeg;base64,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" alt="Quiz Master">
+                    </div>
+                    <div class="project-info">
+                        <h3>Vision AI</h3>
+                        <p>Analyzes images and videos to recognize objects, faces, and patterns, enabling intelligent insights and real-time decision-making.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React.js</span>
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">AI Model</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Loke-1402/vision-AI"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://vision7ai.netlify.app/"><i class="fas fa-external-link-alt"></i>Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/jpeg;base64,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" alt="Connect Four Game">
+                    </div>
+                    <div class="project-info">
+                        <h3>Connect-Four-Game</h3>
+                        <p>An interactive two-player Connect Four game with a clean interface, smooth gameplay, and win detection logic.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React.js</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Selenium</span>
+                            <span class="project-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Loke-1402/Connect-Four-Game"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://connect6game.netlify.app/"><i class="fas fa-external-link-alt"></i>Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFiX9Vlje12eufrQoOu4ZOeawjEKa-ZEMEDA&s" alt="Quiz Master">
+                    </div>
+                    <div class="project-info">
+                        <h3>Todo Wave</h3>
+                        <p>Keeps track of daily tasks in one place, Helps manage, organize, and complete them efficiently.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Loke-1402/To-Do-List"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://todo7list.netlify.app/"><i class="fas fa-external-link-alt"></i>Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/png;base64,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" alt="Quiz Master">
+                    </div>
+                    <div class="project-info">
+                        <h3>Quiz Master</h3>
+                        <p>An engaging quiz application featuring multiple-choice questions, instant scoring, and a user-friendly interface to test knowledge across various topics.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Loke-1402/Quiz-website"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://quizwbsite.netlify.app/"><i class="fas fa-external-link-alt"></i>Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/jpeg;base64,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" alt="Expense Tracker">
+                    </div>
+                    <div class="project-info">
+                        <h3>Expense Tracker </h3>
+                        <p>A simple and intuitive application to track daily income and expenses, monitor spending patterns, and manage budgets effectively.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Figma</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Loke-1402/ExpenseTracker"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://exp5ensetracker.netlify.app/"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="QR-Code Generator">
+                    </div>
+                    <div class="project-info">
+                        <h3>QR-Code Generator</h3>
+                        <p>Instantly creates scannable codes to share information like text, links, or contact details.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Loke-1402/QR-Code-Generator"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://qr2codegenerator.netlify.app/"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project7.png" alt="Quiz Master">
+                    </div>
+                    <div class="project-info">
+                        <h3>ZipEase Compressor</h3>
+                        <p>Compresses files to reduce size and save space, and decompresses them back to their original form when needed.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React.js</span>
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Loke-1402/ZipEase-Compressor"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://zip5ease.netlify.app/"><i class="fas fa-external-link-alt"></i>Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" aria-labelledby="certifications-heading">
-      <div class="container">
-        <h2 id="certifications-heading">Certifications & Internships</h2>
-        <div class="certifications-grid">
-          <div class="certification-card">
-            <h3>Web Development Internship</h3>
-            <p>Company: InternPe</p>
-            <p>Duration: 1 month (September 2024)</p>
-            <a href="assets/images/intern.jpg" class="btn">View Certificate</a>
-          </div>
-          <div class="certification-card">
-            <h3>Software Testing</h3>
-            <p>Issued by: NPTEL </p>
-            <p>Duration: 2 months (Jan - Feb 2023)</p>
-            <a href="assets/images/nptel.jpg" class="btn">View Certificate</a>
-          </div>
-          <div class="certification-card">
-            <h3>Darkweb in Cybercrime</h3>
-            <p>Issued by: Internatinal conference crime against women and children </p>
-            <p>Duration: 2 Days Mar 2024</p>
-            <a href="assets/images/conference.jpg" class="btn">View Certificate</a>
-          </div>
-          <div class="certification-card">
-            <h3>Build your own chatbot</h3>
-            <p>Issued by: IBM Cognitive class </p>
-            <p>Duration: 1 Month Feb 2025</p>
-            <a href="assets/images/ibm.jpg" class="btn">View Certificate</a>
-          </div>
-           <div class="certification-card">
-            <h3>React JS</h3>
-            <p>Issued by: Infosys Springboard </p>
-            <p>Duration: 2 Months (Apr - May 2025)</p>
-            <a href="assets/images/Infosys.jpg" class="btn">View Certificate</a>
-          </div>
-          <div class="certification-card">
-            <h3>JavaScript</h3>
-            <p>Issued by: GUVI </p>
-            <p>Duration: 3 Months (July - Sept 2024)</p>
-            <a href="assets/images/Guvi.jpg" class="btn">View Certificate</a>
-          </div>
-          <div class="certification-card">
-            <h3>HTML & CSS</h3>
-            <p>Issued by: Great Learning</p>
-            <p>Duration: 3 Months (Jan - Mar 2024)</p>
-            <a href="assets/images/Greatlearn.jpg" class="btn">View Certificate</a>
-          </div>
-          <div class="certification-card">
-            <h3>Getting Started With Artifical Intelligence</h3>
-            <p>Issued by: IBM Skills Build</p>
-            <p>Duration: 2 Months (Jan - Feb 2025)</p>
-            <a href="assets/images/IBMskills.jpg" class="btn">View Certificate</a>
-          </div>
-          <div class="certification-card">
-            <h3>PHp and MySQL Trainee</h3>
-            <p>Issued by: Spoken Tutorial IIT Bombay </p>
-            <p>Duration: 2 Months (Aug - Sept 2024)</p>
-            <a href="assets/images/IIT bombay project.jpg" class="btn">View Certificate</a>
-          </div>
-          <div class="certification-card">
-            <h3>RDBMS PostgreSQL</h3>
-            <p>Issued by: Spoken Tutorial IIT Bombay</p>
-            <p>Duration: 2 Months (Aug - Sept 2023)</p>
-            <a href="assets/images/Bombay ST.jpg" class="btn">View Certificate</a>
-          </div>
-          <div class="certification-card">
-            <h3>Machine Learning </h3>
-            <p>Issued by: Elon's AI</p>
-            <p>Duration: 1 Months Jan 2024</p>
-            <a href="assets/images/Machine learning.jpg" class="btn">View Certificate</a>
-          </div>
-           <!-- Add more certification/internship cards -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certifications</h2>
+            </div>
+            <div class="certifications-container">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Software Testing</h3>
+                    <p>Issued by: NPTEL</p>
+                    <p>Duration: 2 Months (Jan-Feb) 2023</p>
+                    <a href="assets/images/nptel.jpg" class="btn btn-secondary">View Certificate</a>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java Programming</h3>
+                    <p>Issued by: Infosys Springboard</p>
+                    <p>Duration: 2 Months (May-June) 2025</p>
+                    <a href="assets/images/Java.jpg" class="btn btn-secondary">View Certificate</a>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Development Intern</h3>
+                    <p>Issued by: Internpe</p>
+                    <p>Duration: 2 Months (Sept-Oct) 2024</p>
+                    <a href="assets/images/intern.jpg" class="btn btn-secondary">View Certificate</a>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Darkweb in Cybercrime</h3>
+                    <p>Issued by: International Conference Crime against women and children</p>
+                    <p>Duration: 2 Days Mar 2024</p>
+                    <a href="assets/images/conference.jpg" class="btn btn-secondary">View Certificate</a>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React JS</h3>
+                    <p>Issued by: Infosys Springboard</p>
+                    <p>Duration: 2 Months (Mar-May) 2025</p>
+                    <a href="assets/images/Infosys.jpg" class="btn btn-secondary">View Certificate</a>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Build your own Chatbot</h3>
+                    <p>Issued by: IBM Cognitive Class</p>
+                    <p>Duration: 1 Month Feb 2025</p>
+                    <a href="assets/images/ibm.jpg" class="btn btn-secondary">View Certificate</a>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fab fa-angular"></i>
+                    </div>
+                    <h3>Angular JS</h3>
+                    <p>Issued by: Infosys Springboard</p>
+                    <p>Duration: 2 Months (May-June) 2025</p>
+                    <a href="assets/images/Angular.jpg" class="btn btn-secondary">View Certificate</a>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Issued by: GUVI</p>
+                    <p>Duration: 3 Months (July-Sept) 2024</p>
+                    <a href="assets/images/Guvi.jpg" class="btn btn-secondary">View Certificate</a>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-object-group"></i>
+                    </div>
+                    <h3>HTML & CSS</h3>
+                    <p>Issued by: Great Learning</p>
+                    <p>Duration: 3 Months (Jan-Mar) 2024</p>
+                    <a href="assets/images/Greatlearn.jpg" class="btn btn-secondary">View Certificate</a>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Getting Started with AI</h3>
+                    <p>Issued by: IBM Skills Build</p>
+                    <p>Duration: 2 Months (Jan-Feb) 2025</p>
+                    <a href="assets/images/IBMskills.jpg" class="btn btn-secondary">View Certificate</a>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fa-brands fa-php"></i>
+                    </div>
+                    <h3>PHP and MySQL Trainee</h3>
+                    <p>Issued by: Spoken Tutorial IIT Bombay</p>
+                    <p>Duration: 2 Months (Aug-Sept) 2023</p>
+                    <a href="assets/images/IIT bombay project.jpg" class="btn btn-secondary">View Certificate</a>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>RDBMS & PostgreSQL</h3>
+                    <p>Issued by: Spoken Tutorial IIT Bombay</p>
+                    <p>Duration: 2 Months (Aug-Sept) 2023</p>
+                    <a href="assets/images/Bombay ST.jpg" class="btn btn-secondary">View Certificate</a>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <p>Issued by: Elon's AI</p>
+                    <p>Duration: 1 Month Jan 2024</p>
+                    <a href="assets/images/Machine learning.jpg" class="btn btn-secondary">View Certificate</a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <h2 id="contact-heading">Contact Me</h2>
-        <form id="contact-form" action="https://formspree.io/f/mqaeykad" method="post">
-          
-          <div class="form-group">
-            <input type="text" id="name" name="name" required placeholder=" ">
-            <label for="name">Name</label>
-          </div>
-          
-          <div class="form-group">
-            <input type="email" id="email" name="email" required placeholder=" ">
-            <label for="email">Email</label>
-          </div>
-          
-          <div class="form-group">
-            <textarea id="message" name="message" required placeholder=" "></textarea>
-            <label for="message">Message</label>
-          </div>
-    
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-    
-        <div aria-live="polite" id="form-message"></div>
-      </div>
-    </section>
-    
-  </main>
-
-  <!-- Footer -->
-  <footer role="contentinfo">
+    <section id="contact">
     <div class="container">
-      <p>&copy; 2025 Lokeshwaran. All rights reserved.</p>
-      <ul class="social-links">
-        <li><a href="https://github.com/Loke-1402/Projects" target="_blank" aria-label="GitHub">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/lokeshwaran-a-011b98288" target="_blank" aria-label="LinkedIn">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/.loke..1402._?utm_source=qr&igsh=MWc1ZHZyeHVxN2luZw==" target="_blank" aria-label="Instagram">instagram</a></li>
-      </ul>
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-form">
+            <form action="https://formspree.io/f/mqaeykad" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
     </div>
-  </footer>
+</section>
 
-  <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <!-- <div class="footer-content">
+            <div class="footer-logo">SD Pro</div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div> -->
+            <div class="social-links">
+                <a href="https://github.com/Loke-1402/" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/lokeshwaran-a-011b98288/" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/____.loke.__.1402._/" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <!-- <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> -->
+            </div>
+            <div class="copyright">
+                <span id="#year"></span><br>&copy; 2025 Lokeshwaran. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script> -->
+    <script src="main.js"></script>
 </body>
 </html>
