@@ -1,115 +1,76 @@
-// Dark Mode Toggle
-// const themeToggle = document.getElementById('theme-toggle');
-// themeToggle.addEventListener('click', () => {
-//   document.body.classList.toggle('dark-mode');
-//   themeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
-// });
+// main.js
+        // Mobile Navigation
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Back to Top Button
+        // const backToTopButton = document.querySelector('.back-to-top');
+        
+        // window.addEventListener('scroll', () => {
+        //     if (window.pageYOffset > 300) {
+        //         backToTopButton.classList.add('active');
+        //     } else {
+        //         backToTopButton.classList.remove('active');
+        //     }
+        // });
+        
+        // backToTopButton.addEventListener('click', () => {
+        //     window.scrollTo({
+        //         top: 0,
+        //         behavior: 'smooth'
+        //     });
+        // });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.timeline-item, .skill-category, .project-card, .certification-card');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Set initial state for animated elements
+        document.querySelectorAll('.timeline-item, .skill-category, .project-card, .certification-card').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+            element.style.transition = 'all 0.5s ease';
+        });
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
 
-// Smooth Scrolling for Navigation Links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
-
-// Form Submission with Formspree
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-  e.preventDefault(); // Prevent the default form submission
-
-  const form = e.target;
-  const formData = new FormData(form);
-  const messageDiv = document.getElementById('form-message');
-
-  fetch(form.action, {
-    method: 'POST',
-    body: formData,
-    headers: {
-      'Accept': 'application/json'
-    }
-  })
-  .then(response => {
-    if (response.ok) {
-      // Display success message
-      messageDiv.textContent = 'Message sent successfully!';
-      messageDiv.style.color = 'green';
-      form.reset(); // Clear the form
-    } else {
-      // Display error message
-      messageDiv.textContent = 'Oops! Something went wrong. Please try again.';
-      messageDiv.style.color = 'red';
-    }
-  })
-  .catch(error => {
-    // Display error message
-    messageDiv.textContent = 'Oops! Something went wrong. Please try again.';
-    messageDiv.style.color = 'red';
-  });
-});
-
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-  e.preventDefault(); // Prevent the default form submission
-
-  const form = e.target;
-  const formData = new FormData(form);
-  const messageDiv = document.getElementById('form-message');
-  const submitButton = form.querySelector('button[type="submit"]');
-
-  // Disable the submit button and show loading state
-  submitButton.disabled = true;
-  submitButton.textContent = 'Sending...';
-
-  fetch(form.action, {
-    method: 'POST',
-    body: formData,
-    headers: {
-      'Accept': 'application/json'
-    }
-  })
-  .then(response => {
-    if (response.ok) {
-      // Display success message
-      messageDiv.textContent = 'Message sent successfully!';
-      messageDiv.style.color = 'green';
-      form.reset(); // Clear the form
-    } else {
-      // Display error message
-      messageDiv.textContent = 'Oops! Something went wrong. Please try again.';
-      messageDiv.style.color = 'red';
-    }
-  })
-  .catch(error => {
-    // Display error message
-    messageDiv.textContent = 'Oops! Something went wrong. Please try again.';
-    messageDiv.style.color = 'red';
-  })
-  .finally(() => {
-    // Re-enable the submit button and reset its text
-    submitButton.disabled = false;
-    submitButton.textContent = 'Send Message';
-  });
-});
-
-
-
-// Project Filtering
-const filterButtons = document.querySelectorAll('.filter-buttons button');
-const projectCards = document.querySelectorAll('.project-card');
-
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const filter = button.getAttribute('data-filter');
-    projectCards.forEach(card => {
-      if (filter === 'all' || card.getAttribute('data-category') === filter) {
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-    // Update active button state
-    filterButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-  });
-});
+        // Auto-update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
