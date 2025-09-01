@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CodeByLokesh</title>
-  <style>
+<!--   <title>CodeByLokesh</title> -->
+<!--   <style>
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
@@ -38,7 +38,7 @@
     .section {
       margin-bottom: 25px;
     }
-  </style>
+  </style> -->
 </head>
 <body>
   <h1>📂 CodeByLokesh – Personal Portfolio</h1>
