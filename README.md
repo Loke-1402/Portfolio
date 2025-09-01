@@ -5,7 +5,7 @@ CodeByLokesh – Personal Portfolio
 
 This is my personal developer portfolio, built to showcase my skills, projects, certifications, and experience as a software developer. The website provides an interactive and responsive design where recruiters, collaborators, and peers can easily explore my work and get in touch.
 
-👉 Live Demo: codebylokesh.netlify.app
+👉 Live Demo: https://codebylokesh.netlify.app/
 
 ⚙️ Installation
 
