@@ -55,7 +55,7 @@
 
   <div class="section">
     <h2>⚙️ Installation</h2>
-    <pre><code>git clone https://github.com/your-username/codebylokesh.git
+    <pre><code>git clone https://github.com/Loke-1402/codebylokesh.git
 cd codebylokesh
 </code></pre>
     <p>Open the <code>index.html</code> file in your browser OR use a live server in VS Code.</p>
