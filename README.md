@@ -11,7 +11,7 @@ This is my personal developer portfolio, built to showcase my skills, projects, 
 
 Clone the repository:
 
-git clone https://github.com/your-username/codebylokesh.git
+git clone https://github.com/Loke-1402/codebylokesh.git
 
 
 Navigate to the project folder:
@@ -57,8 +57,6 @@ This project is licensed under the MIT License – feel free to use and adapt wi
 👨‍💻 Author
 
 Lokeshwaran A
-
-🌐 Portfolio: codebylokesh.netlify.app
 
 💼 LinkedIn: linkedin.com/in/lokeshwaran-a-011b98288
 
